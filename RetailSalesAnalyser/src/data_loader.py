@@ -14,7 +14,7 @@ def merge_sales_data(raw_path,output_path):
     os.makedirs(os.path.dirname(output_path),exist_ok=True)
     df_sum.to_csv(output_path,index=False)
 
-    print(f"Successfully merged{len(all_files)} files into {output_path}")
+    print(f"Successfully merged {len(all_files)} files into {output_path}")
     print(f"Total rows:{len(df_sum)}")
 
 if __name__=="__main__":
